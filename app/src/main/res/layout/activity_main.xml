@@ -7,62 +7,63 @@
     tools:context="com.example.a1691661.twitter.MainActivity">
 
     <LinearLayout
-        android:layout_width="367dp"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:id="@+id/linearLayout3">
+        android:layout_width="375dp"
+        android:layout_height="516dp"
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="289dp"
-            android:layout_height="46dp"
-            android:layout_weight="0.81"
-            android:text="Messages"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+        android:layout_marginBottom="8dp"
 
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="24dp"
-            android:layout_height="45dp"
-            android:layout_weight="0.17"
-            app:srcCompat="@drawable/screeng" />
 
-    </LinearLayout>
+        android:layout_marginLeft="8dp"
 
-    <LinearLayout
-        android:layout_width="383dp"
-        android:layout_height="536dp"
+
+        android:layout_marginTop="8dp"
 
         android:orientation="vertical"
 
-
-        tools:layout_editor_absoluteX="6dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:weightSum="1"
-        app:layout_constraintVertical_bias="0.508">
+        app:layout_constraintVertical_bias="0.148"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_weight="1.29"
+                android:text="  Messages"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                app:srcCompat="@drawable/screeng" />
+        </LinearLayout>
 
         <ScrollView
             style="@android:style/Widget.DeviceDefault.Light.ScrollView"
             android:layout_width="372dp"
-            android:layout_height="match_parent">
+            android:layout_height="584dp">
 
             <LinearLayout
-                android:layout_width="372dp"
-                android:layout_height="391dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="164dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="214dp"
                     android:text="Talk privately with anyone who follows you."
                     android:textAlignment="center"
                     android:textSize="24sp" />
@@ -70,13 +71,13 @@
                 <Button
                     android:id="@+id/button6"
                     android:layout_width="match_parent"
-                    android:layout_height="58dp"
+                    android:layout_height="63dp"
                     android:text="Suggested users"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="viewStart" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="400dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -96,7 +97,7 @@
                             android:layout_width="261dp"
                             android:layout_height="wrap_content"
                             android:text="STM"
-                            android:textAlignment="textStart"
+
                             android:textSize="30sp"
                             android:textStyle="bold" />
 
@@ -107,20 +108,6 @@
                             app:srcCompat="@drawable/gg" />
 
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="264dp"
-                    android:orientation="horizontal"
-                    tools:layout_editor_absoluteX="8dp"
-                    tools:layout_editor_absoluteY="8dp">
-
-                    <Button
-                        android:id="@+id/button8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -175,5 +162,6 @@
             android:layout_height="wrap_content"
             android:background="@drawable/me" />
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
